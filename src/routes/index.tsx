@@ -177,8 +177,8 @@ function Hero() {
 
 function Summary() {
   const items = [
-    "Context: voortdurende reorganisaties en fusies in Belgische ziekenhuizen.",
-    "Hoofdverpleegkundigen vormen de schakel tussen directie en zorgteam.",
+    "Introductie: door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol.",
+    "Onderzoeksvraag: welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen facileteren hierin.",
     "Doel: in kaart brengen welke strategieën zij hanteren bij opgelegde verandering.",
     "Aanpak: kwalitatief onderzoek met semi-gestructureerde interviews.",
     "Relevantie: aanbevelingen voor opleiding, ondersteuning en beleid.",
