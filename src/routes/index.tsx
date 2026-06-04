@@ -176,21 +176,24 @@ function Hero() {
 }
 
 function Summary() {
-  const items = [
-    "Introductie: door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol.",
-    "Onderzoeksvraag: welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen facileteren hierin.",
-    "Doel: in kaart brengen welke strategieën zij hanteren bij opgelegde verandering.",
-    "Aanpak: kwalitatief onderzoek met semi-gestructureerde interviews.",
-    "Relevantie: aanbevelingen voor opleiding, ondersteuning en beleid.",
+  const items: { label?: string; text: string }[] = [
+    { label: "Introductie:", text: " door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol." },
+    { label: "Onderzoeksvraag:", text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen facileteren hierin." },
+    { text: "Doel: in kaart brengen welke strategieën zij hanteren bij opgelegde verandering." },
+    { text: "Aanpak: kwalitatief onderzoek met semi-gestructureerde interviews." },
+    { text: "Relevantie: aanbevelingen voor opleiding, ondersteuning en beleid." },
   ];
   return (
     <section className="mt-14">
       <SectionTitle kicker="20 seconden" title="Abstract" />
       <ul className="space-y-3">
-        {items.map((t, i) => (
+        {items.map((item, i) => (
           <li key={i} className="flex gap-3 rounded-xl bg-card p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
             <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-secondary" />
-            <span className="text-sm text-foreground/85">{t}</span>
+            <span className="text-sm text-foreground/85">
+              {item.label && <strong>{item.label}</strong>}
+              {item.text}
+            </span>
           </li>
         ))}
       </ul>
