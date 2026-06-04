@@ -163,7 +163,8 @@ function Hero() {
         </a>
         <a
           href={`mailto:${CONTACT_EMAIL}`}
-          className="inline-flex items-center justify-center rounded-xl border border-primary/30 bg-card px-5 py-3 text-sm font-semibold text-primary transition hover:bg-primary/5"
+          className="inline-flex items-center justify-center rounded-xl border border-primary/30 px-5 py-3 text-sm font-semibold text-primary transition hover:brightness-95"
+          style={{ backgroundColor: "#E1E7E8" }}
         >
           Contact
         </a>
@@ -377,7 +378,7 @@ function Contact() {
   return (
     <section className="mt-14">
       <SectionTitle kicker="Contact" title="Vragen of feedback?" />
-      <div className="rounded-2xl border border-border p-5" style={{ backgroundColor: "#E1E7E8" }}>
+      <div className="rounded-2xl border border-border bg-card p-5">
         <p className="text-sm font-semibold text-foreground">
           Masterproef Verpleegkunde
         </p>
