@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Digitale uitbreiding van de poster: strategieën van hoofdverpleegkundigen bij opgelegde veranderingen in ziekenhuizen." },
       { name: "author", content: "UHasselt — Masterproef Verpleegkunde" },
       { property: "og:title", content: "Strategieën hoofdverpleegkundigen bij veranderingen" },
-      { property: "og:description", content: "Onderzoek naar strategieën bij opgelegde fusies en reorganisaties in Belgische ziekenhuizen." },
+      { property: "og:description", content: "Digitale uitbreiding van de poster: strategieën van hoofdverpleegkundigen bij opgelegde veranderingen in ziekenhuizen." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Strategieën hoofdverpleegkundigen bij veranderingen" },
+      { name: "twitter:description", content: "Digitale uitbreiding van de poster: strategieën van hoofdverpleegkundigen bij opgelegde veranderingen in ziekenhuizen." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/9Q7ND66eMAMORmgoH4rO3EvZdEy1/social-images/social-1780561202577-De_rol_van_de_leidinggevende_bij_opgelegde_veranderingen_in_het_ziekenhuis_(2).webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/9Q7ND66eMAMORmgoH4rO3EvZdEy1/social-images/social-1780561202577-De_rol_van_de_leidinggevende_bij_opgelegde_veranderingen_in_het_ziekenhuis_(2).webp" },
     ],
     links: [
       {
