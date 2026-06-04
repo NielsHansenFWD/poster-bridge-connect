@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 const PAPER_URL = "#";
 const POSTER_URL = "#";
 const REFERENCES_URL = "#";
-const CONTACT_EMAIL = "voornaam.naam@student.uhasselt.be";
+const CONTACT_EMAIL = "jorien.stassen@student.uhasselt.be";
 const LINKEDIN_URL = "#";
 
 type CardData = {
@@ -185,7 +185,7 @@ function Summary() {
   ];
   return (
     <section className="mt-14">
-      <SectionTitle kicker="20 seconden" title="Samenvatting" />
+      <SectionTitle kicker="20 seconden" title="Abstract" />
       <ul className="space-y-3">
         {items.map((t, i) => (
           <li key={i} className="flex gap-3 rounded-xl bg-card p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
