@@ -140,12 +140,12 @@ function Hero() {
     <section className="pt-2">
       <Badge>Masterproef · UHasselt 2026</Badge>
       <h1 className="mt-5 text-3xl font-bold leading-tight text-primary sm:text-4xl">
-        Gehanteerde strategieën van hoofdverpleegkundigen bij opgelegde
-        veranderingen in ziekenhuizen
+        Gehanteerde strategieën van hoofdverpleegkundigen bij opgelegde veranderingen in
+        ziekenhuizen
       </h1>
       <p className="mt-4 text-base text-foreground/80">
-        Onderzoek naar strategieën van hoofdverpleegkundigen bij opgelegde
-        fusies en reorganisaties in Belgische ziekenhuizen.
+        Onderzoek naar strategieën van hoofdverpleegkundigen bij opgelegde fusies en reorganisaties
+        in Belgische ziekenhuizen.
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -158,6 +158,7 @@ function Hero() {
         <a
           href={POSTER_URL}
           className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
+          style={{ backgroundColor: "#CED4C8" }}
         >
           Download poster (PDF)
         </a>
@@ -169,10 +170,6 @@ function Hero() {
           Contact
         </a>
       </div>
-
-      <p className="mt-5 rounded-xl bg-accent/20 px-4 py-3 text-sm text-foreground/80">
-        Scan de QR-code voor referenties, extra uitleg en downloads.
-      </p>
     </section>
   );
 }
