@@ -158,14 +158,14 @@ function Hero() {
         </a>
         <a
           href={POSTER_URL}
-          className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:brightness-110"
+          className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-black shadow-sm transition hover:brightness-110"
           style={{ backgroundColor: "#CED4C8" }}
         >
           Download poster (PDF)
         </a>
         <a
           href={`mailto:${CONTACT_EMAIL}`}
-          className="inline-flex items-center justify-center rounded-xl border border-primary/30 px-5 py-3 text-sm font-semibold text-primary transition hover:brightness-95"
+          className="inline-flex items-center justify-center rounded-xl border border-primary/30 px-5 py-3 text-sm font-semibold text-black transition hover:brightness-95"
           style={{ backgroundColor: "#E1E7E8" }}
         >
           Contact
