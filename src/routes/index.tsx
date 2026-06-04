@@ -377,7 +377,7 @@ function Contact() {
   return (
     <section className="mt-14">
       <SectionTitle kicker="Contact" title="Vragen of feedback?" />
-      <div className="rounded-2xl border border-border bg-card p-5">
+      <div className="rounded-2xl border border-border p-5" style={{ backgroundColor: "#E1E7E8" }}>
         <p className="text-sm font-semibold text-foreground">
           Masterproef Verpleegkunde
         </p>
