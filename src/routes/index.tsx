@@ -151,7 +151,8 @@ function Hero() {
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <a
           href={PAPER_URL}
-          className="inline-flex items-center justify-center rounded-xl bg-secondary px-5 py-3 text-sm font-semibold text-secondary-foreground shadow-sm transition hover:brightness-95"
+          className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-black shadow-sm transition hover:brightness-110"
+          style={{ backgroundColor: "#EFC1AC" }}
         >
           Download paper (PDF)
         </a>
