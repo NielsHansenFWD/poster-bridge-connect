@@ -144,8 +144,8 @@ function Hero() {
         ziekenhuizen
       </h1>
       <p className="mt-4 text-base text-foreground/80">
-        Onderzoek naar strategieën van hoofdverpleegkundigen bij opgelegde fusies en reorganisaties
-        in Belgische ziekenhuizen.
+        Jorien Stassen1, Sven De Weerdt 1
+        1: UHasselt, Faculteit Geneeskunde en Levenswetenschappen, Agoralaan, 3590 Diepenbeek, België
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
