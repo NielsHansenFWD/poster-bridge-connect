@@ -178,14 +178,14 @@ function Hero() {
 function Summary() {
   const items: { label?: string; text: string }[] = [
     { label: "Introductie:", text: " door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol." },
-    { label: "Onderzoeksvraag:", text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen facileteren hierin." },
+    { label: "Onderzoeksvraag:", text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin." },
     { text: "Doel: in kaart brengen welke strategieën zij hanteren bij opgelegde verandering." },
     { text: "Aanpak: kwalitatief onderzoek met semi-gestructureerde interviews." },
     { text: "Relevantie: aanbevelingen voor opleiding, ondersteuning en beleid." },
   ];
   return (
     <section className="mt-14">
-      <SectionTitle kicker="20 seconden" title="Abstract" />
+      <SectionTitle kicker="Samenvatting" title="Abstract" />
       <ul className="space-y-3">
         {items.map((item, i) => (
           <li key={i} className="flex gap-3 rounded-xl bg-card p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
