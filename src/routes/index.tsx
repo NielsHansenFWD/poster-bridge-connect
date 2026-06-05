@@ -144,8 +144,10 @@ function Hero() {
         ziekenhuizen
       </h1>
       <p className="mt-4 text-base text-foreground/80">
-        Jorien Stassen1, Sven De Weerdt 1
-        1: UHasselt, Faculteit Geneeskunde en Levenswetenschappen, Agoralaan, 3590 Diepenbeek, België
+        Jorien Stassen<sup>1</sup>, Sven De Weerdt<sup>1</sup>
+      </p>
+      <p className="mt-1 text-sm text-foreground/60">
+        <sup>1</sup> UHasselt, Faculteit Geneeskunde en Levenswetenschappen, Agoralaan, 3590 Diepenbeek, België
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
