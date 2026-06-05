@@ -20,8 +20,8 @@ export const Route = createFileRoute("/")({
  * - REFERENCES_URL → volledige referentielijst PDF
  * - CONTACT_EMAIL → mail-to adres
  */
-const PAPER_URL = "#";
-const POSTER_URL = "#";
+const PAPER_URL = "/downloads/Masterthesis_JorienStassen.pdf";
+const POSTER_URL = "/downloads/Poster_JorienStassen.pdf";
 const REFERENCES_URL = "#";
 const CONTACT_EMAIL = "jorien.stassen@student.uhasselt.be";
 const LINKEDIN_URL = "#";
