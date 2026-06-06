@@ -167,7 +167,7 @@ function Hero() {
         </a>
         <a
           href={`mailto:${CONTACT_EMAIL}`}
-          className="inline-flex items-center justify-center rounded-xl border border-primary/30 px-5 py-3 text-sm font-semibold text-black transition hover:brightness-95"
+          className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-black transition hover:brightness-95"
           style={{ backgroundColor: "#E1E7E8" }}
         >
           Contact
@@ -391,13 +391,15 @@ function Contact() {
         <div className="mt-4 flex flex-col gap-2 sm:flex-row">
           <a
             href={`mailto:${CONTACT_EMAIL}`}
-            className="inline-flex items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:brightness-110"
+            className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-black shadow-sm transition hover:brightness-110"
+            style={{ backgroundColor: "#CED4C8" }}
           >
             Stuur een e-mail
           </a>
           <a
             href={LINKEDIN_URL}
-            className="inline-flex items-center justify-center rounded-xl border border-primary/30 px-4 py-2.5 text-sm font-semibold text-primary hover:bg-primary/5"
+            className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold text-black transition hover:brightness-95"
+            style={{ backgroundColor: "#E1E7E8" }}
           >
             LinkedIn
           </a>
