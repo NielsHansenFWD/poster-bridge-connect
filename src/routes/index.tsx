@@ -24,7 +24,7 @@ const PAPER_URL = "/downloads/Masterthesis_JorienStassen.pdf";
 const POSTER_URL = "/downloads/Poster_JorienStassen.pdf";
 const REFERENCES_URL = "#";
 const CONTACT_EMAIL = "jorien.stassen@student.uhasselt.be";
-const LINKEDIN_URL = "#";
+const LINKEDIN_URL = "https://www.linkedin.com/in/jorien-stassen-aa3b13243/";
 
 type CardData = {
   tag: string;
@@ -102,8 +102,8 @@ function Index() {
       <div className="mx-auto max-w-2xl px-5 pb-24 pt-10 sm:px-8">
         <Hero />
         <Summary />
-        <Results />
         <Method />
+        <Results />
         <Practice />
         <References />
         <Downloads />
@@ -383,7 +383,7 @@ function Contact() {
       <SectionTitle kicker="Contact" title="Vragen of feedback?" />
       <div className="rounded-2xl border border-border bg-card p-5">
         <p className="text-sm font-semibold text-foreground">
-          Masterproef Verpleegkunde
+          Masterproef Proces- en systeeminnovatie in de gezondheidszorg
         </p>
         <p className="text-sm text-foreground/70">
           Universiteit Hasselt — Faculteit Geneeskunde en Levenswetenschappen
@@ -410,8 +410,8 @@ function Contact() {
 function Footer() {
   return (
     <footer className="mt-16 border-t border-border pt-6 text-center text-xs text-foreground/55">
-      © 2026 · UHasselt · Masterproef Verpleegkunde · Privacyvriendelijk —
-      geen tracking cookies.
+      © 2026 · UHasselt · Masterproef Proces- en systeeminnovatie in de gezondheidszorg
+      · Privacyvriendelijk — geen tracking cookies.
     </footer>
   );
 }
