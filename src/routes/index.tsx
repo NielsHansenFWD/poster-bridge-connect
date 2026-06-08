@@ -64,14 +64,16 @@ const cards: CardData[] = [
 ];
 
 const references = [
-  "Bridges, W. (2009). Managing Transitions: Making the Most of Change. Da Capo Press.",
-  "Kotter, J. P. (2012). Leading Change. Harvard Business Review Press.",
-  "Lewin, K. (1947). Frontiers in Group Dynamics. Human Relations, 1(1), 5–41.",
-  "Salmela, S., Eriksson, K., & Fagerström, L. (2012). Leading change: a three-dimensional model of nurse leaders' main tasks. Journal of Advanced Nursing, 68(2), 423–433.",
-  "Shirey, M. R. (2013). Lewin's Theory of Planned Change as a Strategic Resource. JONA, 43(2), 69–72.",
-  "By, R. T. (2005). Organisational change management: A critical review. Journal of Change Management, 5(4), 369–380.",
-  "Cummings, G. G., et al. (2018). Leadership styles and outcome patterns for the nursing workforce. Int. J. of Nursing Studies, 85, 19–60.",
-  "Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. Qualitative Research in Psychology, 3(2), 77–101.",
+  "Algethami FM, Alghaylani AS, Alrabie SM, Aljrdahi AWA, Alhurani AA, Altowairqi MA, et al. Leading Change in Healthcare: A Systematic Review of Middle Management's Role. Journal of Posthumanism. 2026;6(2):135-50.",
+  "Cheraghi R, Ebrahimi H, Kheibar N, Sahebihagh MH. Reasons for resistance to change in nursing: an integrative review. BMC Nurs. 2023;22(1):310.",
+  "Silvola S, Restelli U, Croce D, Basu D. Change management for services redesign in healthcare: a conceptual framework. J Prev Med Hyg. 2024;65:E410-E33.",
+  "Braithwaite J, Westbrook J, Coiera E, Runciman WB, Day R, Hillman K, et al. A systems science perspective on the capacity for change in public hospitals. Isr J Health Policy Res. 2017;6:16.",
+  "Lavergne T, Janssens H. Tekort aan verpleegkundigen en crisis van het 'zorgen voor'. 2024.",
+  "Gerkens S, Lavergne T, Lefèvre M, Bouckaert N, Levy M, Maertens de Noordhout C, et al. Performance of the Belgian Health System: report 2024. Brussel: Belgian Healthcare Knowledge Centre (KCE). 2024.",
+  "Qtait M. Systematic Review of Head Nurse Leadership Style and Nurse Performance. International Journal of Africa Nursing Sciences. 2023;18.",
+  "Gonzalez-Garcia A, Pinto-Carral A, Villorejo JS, Marques-Sanchez P. Competency Model for the Middle Nurse Manager (MCGE-Logistic Level). Int J Environ Res Public Health. 2021;18(8).",
+  "Giessner SR, Dawson JF, Horton KE, West M. The impact of supportive leadership on employee outcomes during organizational mergers: An organizational-level field study. J Appl Psychol. 2023;108(4):686-97.",
+  "Oreg S, Berson Y. Leaders' Impact on Organizational Change: Bridging Theoretical and Methodological Chasms. Academy of Management Annals. 2019;13(1):272-307.",
 ];
 
 function Index() {
