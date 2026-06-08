@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,7 +22,6 @@ export const Route = createFileRoute("/")({
  */
 const PAPER_URL = "/downloads/Masterthesis_JorienStassen.pdf";
 const POSTER_URL = "/downloads/Poster_JorienStassen.pdf";
-const REFERENCES_URL = "/downloads/Referenties_JorienStassen.html";
 const CONTACT_EMAIL = "jorien.stassen@student.uhasselt.be";
 const LINKEDIN_URL = "https://www.linkedin.com/in/jorien-stassen-aa3b13243/";
 
@@ -74,6 +74,29 @@ const references = [
   "Gonzalez-Garcia A, Pinto-Carral A, Villorejo JS, Marques-Sanchez P. Competency Model for the Middle Nurse Manager (MCGE-Logistic Level). Int J Environ Res Public Health. 2021;18(8).",
   "Giessner SR, Dawson JF, Horton KE, West M. The impact of supportive leadership on employee outcomes during organizational mergers: An organizational-level field study. J Appl Psychol. 2023;108(4):686-97.",
   "Oreg S, Berson Y. Leaders' Impact on Organizational Change: Bridging Theoretical and Methodological Chasms. Academy of Management Annals. 2019;13(1):272-307.",
+  "Abdelhafiz IM, Alloubani AM, Almatari M. Impact of leadership styles adopted by head nurses on job satisfaction: a comparative study between governmental and private hospitals in Jordan. J Nurs Manag. 2016;24(3):384-92.",
+  "Austin T, Chreim S, Grudniewicz A. Examining health care providers' and middle-level managers' readiness for change: a qualitative study. BMC Health Serv Res. 2020;20(1):47.",
+  "Beasley L, Grace S, Horstmanshof L. Assessing individual readiness for change in healthcare: a review of measurement scales. J Health Organ Manag. 2021;ahead-of-print(ahead-of-print).",
+  "Burke S, Sims D, Lazzara E, Salas E. Trust in leadership: A multi-level review and integration. The Leadership Quarterly. 2007;18:606-32.",
+  "Wooten KC, LP W. Towards a theory of change role efficacy. Human Relations. 1989;42:651-9.",
+  "Tong A, Sainsbury P, Craig J. Consolidated criteria for reporting qualitative research (COREQ): a 32-item checklist for interviews and focus groups. International Journal for Quality in Health Care. 2007;19(6):349-57.",
+  "Braun V, Clarke V. Using thematic analysis in psychology. Qualitative Research in Psychology. 2008;3(2):77-101.",
+  "Ahmed SK, Mohammed RA, Nashwan AJ, Ibrahim RH, Abdalla AQ, M. Ameen BM, et al. Using thematic analysis in qualitative research. Journal of Medicine, Surgery, and Public Health. 2025;6.",
+  "Lincoln Y, Guba E. Naturalistic inquiry. Beverly Hills (CA): Sage. 1985.",
+  "Smith W, Lewis M. Toward a theory of paradox: a dynamic equilibrium model of organizing. Acad Manage Rev. 2011;36(2):381-401.",
+  "Zhang Y, Waldman DA, Han Y-L, Li X-B. Paradoxical Leader Behaviors in People Management: Antecedents and Consequences. Academy of Management Journal. 2015;58(2):538-66.",
+  "Quinn R, Cameron K. Paradox and transformation: toward a theory of change in organization and management. Cambridge. MA: Baillinger; 1988.",
+  "Borghi J, Ismail S, Hollway J, Kim RE, Sturmberg J, Brown G, et al. Viewing the global health system as a complex adaptive system - implications for research and practice. F1000Res. 2022;11:1147.",
+  "Van de Ven A, Poole M. Explaining development and change in organizations. Acad Manage Rev. 1995;20(3):510-40.",
+  "Vis C, van Bodegom-Vos L, Hipple-Walters B, Powell BJ, Ista E, van Nassau F. Applied methods for matching implementation strategies to determinants: a scoping review of scientific and grey literature, and qualitative exploration of practice experiences. Implement Sci. 2025;21(1):14.",
+  "Waterworth S. Time and change in health care. Leadersh Health Serv (Bradf Engl). 2017;30(4):354-63.",
+  "Bluedorn A, Jaussi K. Leaders, followers, and time. Leadership Quarterly. 2008;19(6):654-68.",
+  "Thurlow A, Helms Mills J. Change, talk and sensemaking. Organ Change Manag. 2009;22(5):459-79.",
+  "Wanser L, H L. The role of leadership in change in healthcare facilities: a qualitative study. Am J Manag. 2021;21(1):16-31.",
+  "Lu H, Li F. The Dual Effect of Transformational Leadership on Individual- and Team-Level Performance: The Mediational Roles of Motivational Processes. Front Psychol. 2021;12:606066.",
+  "Humphrey R. How do leaders use emotional labor? J Organ Behav. 2012;33(5):740-4.",
+  "Morrison VJ, Jensen AL. Between a rock and a hard place: Nurse managers' experiences of large-scale organizational change in the public health service. J Adv Nurs. 2022;78(10):3385-97.",
+  "Groulx P, Maisonneuve F, Harvey JF, Johnson KJ. The ripple effect of strain in times of change: how manager emotional exhaustion affects team psychological safety and readiness to change. Front Psychol. 2024;15:1298104.",
 ];
 
 function Index() {
@@ -334,11 +357,13 @@ function Practice() {
 }
 
 function References() {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded ? references : references.slice(0, 10);
   return (
     <section className="mt-14">
       <SectionTitle kicker="Bronnen" title="Referenties" />
       <ol className="space-y-2 rounded-2xl border border-border bg-card p-5 text-xs leading-relaxed text-foreground/80 sm:text-sm">
-        {references.map((r, i) => (
+        {visible.map((r, i) => (
           <li key={i} className="flex gap-3">
             <span className="w-5 shrink-0 text-right font-mono text-foreground/40">
               {i + 1}.
@@ -347,12 +372,15 @@ function References() {
           </li>
         ))}
       </ol>
-      <a
-        href={REFERENCES_URL}
-        className="mt-3 inline-flex text-sm font-semibold text-primary underline-offset-4 hover:underline"
+      <button
+        type="button"
+        onClick={() => setExpanded((e) => !e)}
+        className="mt-3 text-sm font-semibold text-primary underline-offset-4 hover:underline"
       >
-        Volledige referentielijst downloaden (PDF) →
-      </a>
+        {expanded
+          ? "Minder tonen −"
+          : `Alle ${references.length} referenties tonen +`}
+      </button>
     </section>
   );
 }
