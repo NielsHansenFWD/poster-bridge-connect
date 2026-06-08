@@ -184,11 +184,11 @@ function Summary() {
   const items: { label?: string; text: string }[] = [
     {
       label: "Introductie:",
-      text: " door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol.",
+      text: " door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen spelen hierbij een cruciale rol.",
     },
     {
       label: "Onderzoeksvraag:",
-      text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin.",
+      text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin?",
     },
     {
       label: "Methode:",
