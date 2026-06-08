@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -31,7 +30,6 @@ type CardData = {
   title: string;
   tone: "primary" | "secondary" | "accent" | "muted";
   bullets: string[];
-  detail: string;
 };
 
 const cards: CardData[] = [
@@ -40,48 +38,28 @@ const cards: CardData[] = [
     title: "Organisatorisch",
     tone: "primary",
     bullets: [
-      "Heldere structuur en gefaseerde planning bij elke verandering",
-      "Korte feedbacklijnen tussen directie en afdeling",
-      "Realistische tijdslijnen met ruimte voor bijsturing",
+      "Bieden van structuur versus behouden van flexibiliteit",
+      "Tempo maken versus bewust vertragen",
     ],
-    detail:
-      "Hoofdverpleegkundigen creëren overzicht door verandering op te delen in beheersbare stappen, rollen expliciet te maken en regelmatig terug te koppelen naar directie en team.",
   },
   {
     tag: "02",
     title: "Relationeel",
     tone: "secondary",
     bullets: [
-      "Open en regelmatige communicatie met het team",
-      "Erkenning van weerstand en emoties van medewerkers",
-      "Coalities bouwen met collega-leidinggevenden",
+      "Individuele besluitvorming versus collectieve betrokkenheid",
+      "Nabijheid versus autonomie",
+      "Individuele begeleiding versus teamgerichte ondersteuning",
     ],
-    detail:
-      "Het onderhouden van vertrouwen blijkt cruciaal: aanwezig zijn op de werkvloer, individuele gesprekken voeren en signalen van het team serieus nemen.",
   },
   {
     tag: "03",
     title: "Psychologisch",
     tone: "accent",
     bullets: [
-      "Zelfreflectie en bewuste emotieregulatie",
-      "Steun zoeken bij peers en mentor-collega's",
-      "Grenzen bewaken om burn-out te voorkomen",
+      "Vertrouwen uitstralen versus ervaren van onzekerheid",
+      "Zorg dragen voor medewerkers versus zorg dragen voor zichzelf",
     ],
-    detail:
-      "Veranderingen vragen veerkracht. Deelnemers benoemen het belang van intervisie, supervisie en bewust afstand nemen om kwaliteit van leidinggeven te behouden.",
-  },
-  {
-    tag: "04",
-    title: "Praktijk & aanbevelingen",
-    tone: "muted",
-    bullets: [
-      "Investeer in verandercompetenties van hoofdverpleegkundigen",
-      "Voorzie tijd en mandaat om verandering te begeleiden",
-      "Borg formele ondersteuningsstructuren (intervisie, coaching)",
-    ],
-    detail:
-      "Ziekenhuizen worden aangemoedigd om hoofdverpleegkundigen niet enkel als uitvoerders, maar als sleutelactoren in verandertrajecten te erkennen en te ondersteunen.",
   },
 ];
 
@@ -147,7 +125,7 @@ function Hero() {
         Jorien Stassen<sup>1</sup>, Sven De Weerdt<sup>1</sup>
       </p>
       <p className="mt-1 text-sm text-foreground/60">
-        <sup>1</sup> UHasselt, Faculteit Geneeskunde en Levenswetenschappen, Agoralaan, 3590 Diepenbeek, België
+        1 UHasselt, Faculteit Geneeskunde en Levenswetenschappen, Agoralaan, 3590 Diepenbeek, België
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -179,11 +157,28 @@ function Hero() {
 
 function Summary() {
   const items: { label?: string; text: string }[] = [
-    { label: "Introductie:", text: " door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol." },
-    { label: "Onderzoeksvraag:", text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin." },
-    { text: "Doel: in kaart brengen welke strategieën zij hanteren bij opgelegde verandering." },
-    { text: "Aanpak: kwalitatief onderzoek met semi-gestructureerde interviews." },
-    { text: "Relevantie: aanbevelingen voor opleiding, ondersteuning en beleid." },
+    {
+      label: "Introductie:",
+      text: " door het toenemende tekort aan verpleegkundigen worden afdelingen vaak samengevoegd, een verandering die doorgaans top-down wordt opgelegd. Hoofdverpleegkundigen speken hierbij een cruciale rol.",
+    },
+    {
+      label: "Onderzoeksvraag:",
+      text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin.",
+    },
+    {
+      text: "Methode: hermeneutisch fenomenologisch onderzoeksdesign. Semi-gestructureerde interviews werden afgenomen bij 13 participanten (hoofdverpleegkundigen, adjunct- hoofdverpleegkundigen, managers, stafmedewerkers en verpleegkundigen) uit drie verschillende ziekenhuizen.",
+    },
+    {
+      text:
+        "Resultaten: de resultaten tonen aan dat leiderschap bij de opgelegde verandering niet kan worden\n" +
+        "herleid tot een vast stappenplan. De verschillende actoren ervaren de rol van hoofdverpleegkundigen\n" +
+        "als het gelijktijdig hanteren van organisatorische, relationele en psychologische spanningsvelden. Deze spanningsvelden uiten zich in het evenwicht behouden tussen structuur en flexibiliteit, individuele besluitvorming en collectieve betrokkenheid, individuele begeleiding en teamgerichte ondersteuning, nabijheid en autonomie stimuleren, zorg dragen voor anderen en zorg dragen voor zichzelf, tempo maken en vertragen en het uitstralen van vertrouwen ondanks het ervaren van onzekerheid.\n",
+    },
+    {
+      text:
+        "Conclusie: dit onderzoek toont aan dat leiderschap bij opgelegde verandering een dynamisch en\n" +
+        "contextgevoelig proces is waarin hoofdverpleegkundigen voortdurend moeten afwegen, schakelen en bijsturen. Het succes blijkt niet enkel afhankelijk te zijn van de inhoud van de verandering maar in belangrijke mate van hoe deze door de hoofdverpleegkundigen wordt vertaald, gedragen en gestuurd op afdelingsniveau. Hoofdverpleegkundigen vervullen hierbij een sleutelrol als verbindingsfiguur tussen beleid en praktijk waarbij hun vermogen om spanningsvelden te hanteren bijdraagt aan een gedragen en duurzame verandering binnen de ziekenhuiscontext. \n",
+    },
   ];
   return (
     <section className="mt-14">
@@ -219,7 +214,7 @@ function toneClasses(tone: CardData["tone"]) {
 function Results() {
   return (
     <section className="mt-14">
-      <SectionTitle kicker="Resultaten" title="Vier strategiedomeinen" />
+      <SectionTitle kicker="Resultaten" title="Paradoxen op drie verschillende niveaus" />
       <div className="grid gap-4">
         {cards.map((c) => (
           <ResultCard key={c.tag} card={c} />
@@ -230,7 +225,6 @@ function Results() {
 }
 
 function ResultCard({ card }: { card: CardData }) {
-  const [open, setOpen] = useState(false);
   return (
     <article
       className={`rounded-2xl border ${toneClasses(card.tone)} p-5 shadow-[0_2px_6px_rgba(74,107,112,0.06)]`}
@@ -247,27 +241,14 @@ function ResultCard({ card }: { card: CardData }) {
           </li>
         ))}
       </ul>
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        className="mt-4 text-xs font-semibold uppercase tracking-wider text-primary/80 hover:text-primary"
-        aria-expanded={open}
-      >
-        {open ? "Verberg toelichting −" : "Toon toelichting +"}
-      </button>
-      {open && (
-        <p className="mt-3 border-t border-primary/10 pt-3 text-sm text-foreground/75">
-          {card.detail}
-        </p>
-      )}
     </article>
   );
 }
 
 function Method() {
   const items = [
-    ["Type", "Kwalitatief, exploratief onderzoek"],
-    ["Deelnemers", "Hoofdverpleegkundigen uit Belgische ziekenhuizen"],
+    ["Type", "Hermeneutisch fenomenologisch onderzoeksdesign"],
+    ["Participanten", "13 participanten uit 3 verschillende ziekenhuizen"],
     ["Periode", "Februari – april 2026"],
     ["Dataverzameling", "Semi-gestructureerde interviews"],
     ["Analyse", "Thematische analyse met NVivo"],
@@ -289,25 +270,60 @@ function Method() {
   );
 }
 
+type PracticeItem = {
+  label: string;
+  bullets: string[];
+};
+
+const practiceItems: PracticeItem[] = [
+  {
+    label: "Onderzoek",
+    bullets: [
+      "Andere vormen van opgelegde verandering",
+      "Evolutie psychologisch component",
+    ],
+  },
+  {
+    label: "Praktijk",
+    bullets: [
+      "Reflectie, intervisie en coaching rond spanningsvelden",
+      "Tijd en vertraging als randvoorwaarde",
+    ],
+  },
+  {
+    label: "Beleid",
+    bullets: [
+      "Rekening houden met implementatiecapaciteit",
+      "Verandering benaderen als complex adaptief proces",
+      "Emotionele uitputting en verlies van draagkracht voorkomen",
+    ],
+  },
+];
+
 function Practice() {
-  const tips = [
-    "Plan vandaag één korte feedbackronde met je team over de lopende verandering.",
-    "Maak ruimte in je agenda voor intervisie met collega-hoofdverpleegkundigen.",
-    "Bespreek met je directie welk mandaat en welke tijd je krijgt voor verandering.",
-  ];
   return (
     <section className="mt-14">
-      <SectionTitle kicker="Voor de praktijk" title="What to do tomorrow" />
+      <SectionTitle kicker="Voor de praktijk" title="Aanbevelingen" />
       <ol className="space-y-3">
-        {tips.map((t, i) => (
+        {practiceItems.map((item, i) => (
           <li
             key={i}
-            className="flex gap-3 rounded-2xl border border-secondary/40 bg-secondary/10 p-4"
+            className="rounded-2xl border border-secondary/40 bg-secondary/10 p-4"
           >
-            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary text-sm font-semibold text-secondary-foreground">
-              {i + 1}
-            </span>
-            <span className="text-sm text-foreground/85">{t}</span>
+            <div className="flex items-center gap-3 mb-3">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-secondary text-sm font-semibold text-secondary-foreground">
+                {i + 1}
+              </span>
+              <span className="text-sm font-semibold text-foreground">{item.label}</span>
+            </div>
+            <ul className="space-y-1 pl-10">
+              {item.bullets.map((b, j) => (
+                <li key={j} className="flex gap-2 text-sm text-foreground/85">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary/60" />
+                  <span>{b}</span>
+                </li>
+              ))}
+            </ul>
           </li>
         ))}
       </ol>
@@ -318,7 +334,7 @@ function Practice() {
 function References() {
   return (
     <section className="mt-14">
-      <SectionTitle kicker="Bronnen" title="Belangrijkste referenties" />
+      <SectionTitle kicker="Bronnen" title="Referenties" />
       <ol className="space-y-2 rounded-2xl border border-border bg-card p-5 text-xs leading-relaxed text-foreground/80 sm:text-sm">
         {references.map((r, i) => (
           <li key={i} className="flex gap-3">
@@ -346,7 +362,8 @@ function Downloads() {
       <div className="grid gap-3 sm:grid-cols-2">
         <a
           href={PAPER_URL}
-          className="rounded-2xl border border-primary/20 bg-card p-5 transition hover:bg-primary/5"
+          className="rounded-2xl border border-primary/20 p-5 transition hover:brightness-105"
+          style={{ backgroundColor: "#EFC1AC" }}
         >
           <p className="text-xs font-semibold uppercase tracking-wider text-primary/70">
             Masterproef
@@ -358,7 +375,8 @@ function Downloads() {
         </a>
         <a
           href={POSTER_URL}
-          className="rounded-2xl border border-primary/20 bg-card p-5 transition hover:bg-primary/5"
+          className="rounded-2xl border border-primary/20 p-5 transition hover:brightness-105"
+          style={{ backgroundColor: "#CED4C8" }}
         >
           <p className="text-xs font-semibold uppercase tracking-wider text-primary/70">
             Poster
@@ -369,10 +387,6 @@ function Downloads() {
           <p className="mt-1 text-xs text-foreground/60">PDF · A0 formaat</p>
         </a>
       </div>
-      <p className="mt-4 rounded-xl bg-muted/60 p-3 text-xs text-foreground/70">
-        Documenten beschikbaar gesteld voor persoonlijk gebruik. Contacteer de
-        auteur voor vragen of reproductie.
-      </p>
     </section>
   );
 }
@@ -382,7 +396,8 @@ function Contact() {
     <section className="mt-14">
       <SectionTitle kicker="Contact" title="Vragen of feedback?" />
       <div className="rounded-2xl border border-border bg-card p-5">
-        <p className="text-sm font-semibold text-foreground">
+        <p className="text-lg font-bold text-foreground">Jorien Stassen</p>
+        <p className="text-sm font-semibold text-foreground mt-1">
           Masterproef Proces- en systeeminnovatie in de gezondheidszorg
         </p>
         <p className="text-sm text-foreground/70">
