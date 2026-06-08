@@ -191,17 +191,20 @@ function Summary() {
       text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin.",
     },
     {
-      text: "Methode: hermeneutisch fenomenologisch onderzoeksdesign. Semi-gestructureerde interviews werden afgenomen bij 13 participanten (hoofdverpleegkundigen, adjunct- hoofdverpleegkundigen, managers, stafmedewerkers en verpleegkundigen) uit drie verschillende ziekenhuizen.",
+      label: "Methode:",
+      text: " hermeneutisch fenomenologisch onderzoeksdesign. Semi-gestructureerde interviews werden afgenomen bij 13 participanten (hoofdverpleegkundigen, adjunct- hoofdverpleegkundigen, managers, stafmedewerkers en verpleegkundigen) uit drie verschillende ziekenhuizen.",
     },
     {
+      label: "Resultaten:",
       text:
-        "Resultaten: de resultaten tonen aan dat leiderschap bij de opgelegde verandering niet kan worden\n" +
+        " de resultaten tonen aan dat leiderschap bij de opgelegde verandering niet kan worden\n" +
         "herleid tot een vast stappenplan. De verschillende actoren ervaren de rol van hoofdverpleegkundigen\n" +
         "als het gelijktijdig hanteren van organisatorische, relationele en psychologische spanningsvelden. Deze spanningsvelden uiten zich in het evenwicht behouden tussen structuur en flexibiliteit, individuele besluitvorming en collectieve betrokkenheid, individuele begeleiding en teamgerichte ondersteuning, nabijheid en autonomie stimuleren, zorg dragen voor anderen en zorg dragen voor zichzelf, tempo maken en vertragen en het uitstralen van vertrouwen ondanks het ervaren van onzekerheid.\n",
     },
     {
+      label: "Conclusie:",
       text:
-        "Conclusie: dit onderzoek toont aan dat leiderschap bij opgelegde verandering een dynamisch en\n" +
+        " dit onderzoek toont aan dat leiderschap bij opgelegde verandering een dynamisch en\n" +
         "contextgevoelig proces is waarin hoofdverpleegkundigen voortdurend moeten afwegen, schakelen en bijsturen. Het succes blijkt niet enkel afhankelijk te zijn van de inhoud van de verandering maar in belangrijke mate van hoe deze door de hoofdverpleegkundigen wordt vertaald, gedragen en gestuurd op afdelingsniveau. Hoofdverpleegkundigen vervullen hierbij een sleutelrol als verbindingsfiguur tussen beleid en praktijk waarbij hun vermogen om spanningsvelden te hanteren bijdraagt aan een gedragen en duurzame verandering binnen de ziekenhuiscontext. \n",
     },
   ];
