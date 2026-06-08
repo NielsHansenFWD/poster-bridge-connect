@@ -188,11 +188,11 @@ function Summary() {
     },
     {
       label: "Onderzoeksvraag:",
-      text: " welke strategiëen hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategiëen faciliteren hierin?",
+      text: " welke strategieën hanteren hoofdverpleegkundigen bij de opgelegde verandering namelijk het samenvoegen van 2 verblijfsafdelingen tot 1 verblijfsafdeling en welke strategieën faciliteren hierin?",
     },
     {
       label: "Methode:",
-      text: " hermeneutisch fenomenologisch onderzoeksdesign. Semi-gestructureerde interviews werden afgenomen bij 13 participanten (hoofdverpleegkundigen, adjunct- hoofdverpleegkundigen, managers, stafmedewerkers en verpleegkundigen) uit drie verschillende ziekenhuizen.",
+      text: " hermeneutisch fenomenologisch onderzoeksdesign. Semi-gestructureerde interviews werden afgenomen bij 13 participanten (hoofdverpleegkundigen, adjunct-hoofdverpleegkundigen, managers, stafmedewerkers en verpleegkundigen) uit drie verschillende ziekenhuizen.",
     },
     {
       label: "Resultaten:",
