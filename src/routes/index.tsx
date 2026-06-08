@@ -373,7 +373,7 @@ function Downloads() {
           <p className="mt-2 text-base font-semibold text-foreground">
             Download volledige paper
           </p>
-          <p className="mt-1 text-xs text-foreground/60">PDF · ~ enkele MB</p>
+          <p className="mt-1 text-xs text-foreground/60">PDF</p>
         </a>
         <a
           href={POSTER_URL}
@@ -386,7 +386,7 @@ function Downloads() {
           <p className="mt-2 text-base font-semibold text-foreground">
             Download poster
           </p>
-          <p className="mt-1 text-xs text-foreground/60">PDF · A0 formaat</p>
+          <p className="mt-1 text-xs text-foreground/60">PDF</p>
         </a>
       </div>
     </section>
