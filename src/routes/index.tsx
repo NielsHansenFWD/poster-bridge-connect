@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
  */
 const PAPER_URL = "/downloads/Masterthesis_JorienStassen.pdf";
 const POSTER_URL = "/downloads/Poster_JorienStassen.pdf";
-const REFERENCES_URL = "#";
+const REFERENCES_URL = "/downloads/Referenties_JorienStassen.html";
 const CONTACT_EMAIL = "jorien.stassen@student.uhasselt.be";
 const LINKEDIN_URL = "https://www.linkedin.com/in/jorien-stassen-aa3b13243/";
 
